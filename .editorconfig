@@ -1,0 +1,68 @@
+# https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# General settings for all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+
+# 4 space indentation for common web development files
+[*.{html,css,js,json}]
+indent_style = space
+indent_size = 4
+
+# 2 space indentation for YAML and Markdown files
+[*.{yml,yaml,md}]
+indent_style = space
+indent_size = 2
+
+# Specific settings for Python files
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Specific settings for Makefiles
+[Makefile]
+indent_style = tab
+
+# Specific settings for C and C++ source files
+[*.{c,h,cpp,hpp}]
+indent_style = space
+indent_size = 4
+
+# Specific settings for Java files
+[*.java]
+indent_style = space
+indent_size = 4
+
+# Specific settings for XML files
+[*.xml]
+indent_style = space
+indent_size = 2
+
+# Set line length for text files
+[*.txt]
+max_line_length = 80
+
+# Settings for markdown and text files
+[*.{md,txt}]
+trim_trailing_whitespace = false
+
+# Additional settings for shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+
+# Config files
+[*.{ini,conf}]
+indent_style = space
+indent_size = 2
+
+# JSON configuration files
+[*.{json,jsonc}]
+indent_style = space
+indent_size = 2
