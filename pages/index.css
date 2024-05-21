@@ -2,10 +2,12 @@
 .page {
     font-family: Inter, Arial, sans-serif;
     font-family: "Noto serif", "Times New Roman", serif;
-    
-
-    max-width: 1100px;
+    min-width: 1100px;
+    max-width: 1600px;
     margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
 /*
