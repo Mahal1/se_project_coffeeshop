@@ -1,7 +1,4 @@
-
 .page {
-    
-    .page {
         margin: 0 auto;
         min-width: 1100px;
         max-width: 1600px;
@@ -10,7 +7,7 @@
         font-family: "Noto serif", "Times New Roman", serif;
 }
 
-/* styles.css
+/*     I stil have to proced to the style in the future steps
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -178,5 +175,5 @@ body {
 
 .footer__logo, .footer__credits {
     margin: 0;
-} */
-  
+}
+/*
