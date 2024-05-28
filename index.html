@@ -14,7 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <style>
+        .inter-text {
+            font-family: 'Inter', Arial, sans-serif; }
+        .noto-serif-text {
+            font-family: 'Noto Serif', 'Times New Roman', serif; }
+    </style>
+</head> 
 <body>
     <div class="page">
         <header class="header">
@@ -30,8 +36,8 @@
                 </ul>
             </nav>
             <div class="header__content">
-                <h2 class="header__title header__title--1">Specialty coffee </h2>
-                <h1 class="header__title header__title--2">In the Triple Peaks Library</h1>
+                <h2 class="header__title header__title--special">Specialty coffee</h2>
+                <h1 class="header__title header__title--main">In the Triple Peaks Library</h1>
                 <p class="header__subtitle">Welcome to our study zone! We've got the coffee to energize you and the cozy vibes to help you get creative.</p>
                 <p class="header__hours">Hours: Monday - Friday | 10:00 - 19:00, Saturday - Sunday | 11:00 - 18:00</p>
                 <p class="header__address">200 Success Avenue, The Town of Triple Peaks</p>
@@ -62,7 +68,7 @@
             <section class="reservation">
                 <h2 class="reservation__title">Book a table</h2>
                 <form class="reservation__form">
-                  <label for="name">Name *</label>
+                    <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
 
                     <label for="guests">Number of guests *</label>
@@ -152,3 +158,4 @@
     </div>
 </body>
 </html>
+
