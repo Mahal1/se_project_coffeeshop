@@ -168,7 +168,7 @@
 }
 
 .background__recipes {
-background-color: #0a2750
+background-color: #0a2750;
 z-index: -1;
 position: absolute;
 top: 0;
