@@ -12,21 +12,11 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .inter-text {
-            font-family: 'Inter', Arial, sans-serif; }
-        .noto-serif-text {
-            font-family: 'Noto Serif', 'Times New Roman', serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Noto+Serif&amp;display=swap" rel="stylesheet">    
 </head> 
 <body>
     <div class="page">
         <header class="header">
-            <div class="header__background">
-                <img src="./images/background_header.svg" alt="background header image">
-            </div>
             <nav class="nav">
                 <img 
                 src="./images/logo_coffeeshop_dark.svg" 
@@ -58,107 +48,103 @@
                 <p class="header__paragraph">200 Success Avenue, The Town of Triple Peaks</p>
             </div>
         </header>
-     <main class="content">
-        <section class="recipes">
-            <div class="background__recipes">
-                <img src="./images/background_recipes.svg" alt="background recipes image" class="background__recipes-image">
-            </div>
-            <h2 class="recipes__title">Recipes</h2>
-            <p class="recipes__subtitle"><span class="recipes__subtitle-apart">Check out some recipes we've collected for</span> your home-brewing convenience:</p>
-            <div class="recipes__videos">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j6VlT_jUVPc?si=NfhM-uiKH74a5XWo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="recipes__video-caption"><span>Aeropress recipe</span> ~5min</p>
+        <main class="content">
+            <section class="recipes">
+                <h2 class="recipes__title">Recipes</h2>
+                <p class="recipes__subtitle"><span class="recipes__subtitle-apart">Check out some recipes we've collected for</span> your home-brewing convenience:</p>
+                <div class="recipes__videos">
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/j6VlT_jUVPc?si=NfhM-uiKH74a5XWo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="recipes__video-caption"><span>Aeropress recipe</span> ~5min</p>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/st571DYYTR8?si=mUxN35NTVO7KtmB6" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p class="recipes__video-caption"><span> French press recipe</span>  ~15min</p>
+                    </div>
                 </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/st571DYYTR8?si=mUxN35NTVO7KtmB6" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="recipes__video-caption"><span> French press recipe</span>  ~15min</p>
+            </section>
+              <section class="reservation">
+            <h2 class="reservation__title">Book a table</h2>
+            <form class="reservation__form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="guests">Number of guests *</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select number of guests</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+
+                <label for="datetime">Date & time *</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+
+                <label for="email">Your email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="reservation__form-footer">
+                    <button type="submit" class="reservation__submit">Book a table</button>
+                    <label class="reservation__terms">
+                        <input type="checkbox" required>
+                        I agree with the terms of use
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <section class="menu">
+            <h2 class="menu__title">Menu</h2>
+            <p class="menu__description">We brew coffee from locally roasted, Fairtrade certified beans and use biodegradable cups. All teas from our collection are $2/cup.</p>
+            <div class="menu__items">
+                <div class="menu__category">
+                    <h3>Filter</h3>
+                    <ul>
+                        <li>Regular (12 oz) - $1</li>
+                        <li>Large (16 oz) - $1.25</li>
+                        <li>XL (20 oz) - $1.75</li>
+                        <li>Fancy-size (24 oz, decaf) - $1.75</li>
+                        <li>Iced Coffee (16 oz) - $1.25</li>
+                    </ul>
+                </div>
+                <div class="menu__category">
+                    <h3>Espresso</h3>
+                    <ul>
+                        <li>Macchiato - $2.25</li>
+                        <li>Cortado - $2.5</li>
+                        <li>Mocha - $3</li>
+                        <li>Sunrise in the Bay Area (decaf) - $10</li>
+                    </ul>
+                </div>
+                <div class="menu__category">
+                    <h3>Baked Goods</h3>
+                    <ul>
+                        <li>Almond Croissant - $2</li>
+                        <li>Banana Bread - $1.75</li>
+                        <li>Key Lime Pie - $3</li>
+                        <li>Red Velvet Cake - $3.75</li>
+                        <li>Web Cookie - $2</li>
+                        <li>Fresh Baguette - $0.25</li>
+                    </ul>
                 </div>
             </div>
         </section>
-
-        <!--  <section class="reservation">
-                <h2 class="reservation__title">Book a table</h2>
-                <form class="reservation__form">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="guests">Number of guests *</label>
-                    <select id="guests" name="guests" required>
-                        <option value="" disabled selected>Select number of guests</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-
-                    <label for="datetime">Date & time *</label>
-                    <input type="datetime-local" id="datetime" name="datetime" required>
-
-                    <label for="email">Your email *</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <div class="reservation__form-footer">
-                        <button type="submit" class="reservation__submit">Book a table</button>
-                        <label class="reservation__terms">
-                            <input type="checkbox" required>
-                            I agree with the terms of use
-                        </label>
-                    </div>
-                </form>
-            </section>
-
-            <section class="menu">
-                <h2 class="menu__title">Menu</h2>
-                <p class="menu__description">We brew coffee from locally roasted, Fairtrade certified beans and use biodegradable cups. All teas from our collection are $2/cup.</p>
-                <div class="menu__items">
-                    <div class="menu__category">
-                        <h3>Filter</h3>
-                        <ul>
-                            <li>Regular (12 oz) - $1</li>
-                            <li>Large (16 oz) - $1.25</li>
-                            <li>XL (20 oz) - $1.75</li>
-                            <li>Fancy-size (24 oz, decaf) - $1.75</li>
-                            <li>Iced Coffee (16 oz) - $1.25</li>
-                        </ul>
-                    </div>
-                    <div class="menu__category">
-                        <h3>Espresso</h3>
-                        <ul>
-                            <li>Macchiato - $2.25</li>
-                            <li>Cortado - $2.5</li>
-                            <li>Mocha - $3</li>
-                            <li>Sunrise in the Bay Area (decaf) - $10</li>
-                        </ul>
-                    </div>
-                    <div class="menu__category">
-                        <h3>Baked Goods</h3>
-                        <ul>
-                            <li>Almond Croissant - $2</li>
-                            <li>Banana Bread - $1.75</li>
-                            <li>Key Lime Pie - $3</li>
-                            <li>Red Velvet Cake - $3.75</li>
-                            <li>Web Cookie - $2</li>
-                            <li>Fresh Baguette - $0.25</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="about">
-                <h2 class="about__title">About Artful Eats & Espresso</h2>
-                <p class="about__description">Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WIFI. Our main mission is keeping guests cozy and energized. Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!</p>
-                <div class="about__social">
-                    <p>Social media:</p>
-                    <a href="#" class="about__social-link">Facebook</a>
-                    <a href="#" class="about__social-link">Instagram</a>
-                </div>
-            </section>
-        </main>
+        
+        <section class="about">
+            <h2 class="about__title">About Artful Eats & Espresso</h2>
+            <p class="about__description">Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WIFI. Our main mission is keeping guests cozy and energized. Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!</p>
+            <div class="about__social">
+                <p>Social media:</p>
+                <a href="#" class="about__social-link">Facebook</a>
+                <a href="#" class="about__social-link">Instagram</a>
+            </div>
+        </section>
+    </main>
         <footer class="footer">
             <div class="footer__logo">
                 <img src="./images/logo_coffeeshop_light.svg" alt="Artful Eats & Espresso Logo">
@@ -166,7 +152,7 @@
             <div class="footer__credits">
                 <p>© 2024 Wenceslao Ndong</p>
             </div>
-        </footer> -->
+        </footer>
     </div>
 </body>
 </html> 
