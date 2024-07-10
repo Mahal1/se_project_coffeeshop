@@ -2,12 +2,13 @@
     background: linear-gradient(180deg, #0A2850 0%, #071931 100%);
     color: #fff;
     padding: 60px;
+    width: 100%;
+
   }
   
   .footer__content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
   }
   
