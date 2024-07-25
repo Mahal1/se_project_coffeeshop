@@ -68,23 +68,14 @@
                         <label class="form__label" for="name">Name *</label>
                         <input class="form__input" type="text" id="name" name="name" placeholder="Name Surname" required>
                         <label class="form__label" for="guests">Number of guests *</label>
-                        <select id="guests" name="guests" required>
-                            <option value="" disabled selected>Select number of guests</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
+                        <input class="form__input" type="text" id="guests" name="guests list" placeholder="1-8" required>
+
             
                         <label class="form__label" for="datetime">Date & time *</label>
                       <input class="form__input" type="datetime-local" id="datetime" name="datetime" placeholder="mm/dd/yyyy --:-- --" required>
             
                       <label class="form__label" for="email">Your email *</label>
-                      <input class="form__input" type="email" id="email" name="email" placeholder="Your email here" required>
+                      <input class="form__input" type="email" id="email" name="email" placeholder="email@email.com" required>
                       <button type="submit" class="form__button">Book a table</button>
                       <label class="form__label checkbox-label">
                           <input class="form__checkbox" type="checkbox" required>
