@@ -12,6 +12,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 1; /* I already had a the z-index here*/
+    box-sizing: border-box;
+
   }
 
 .header__title {
@@ -19,12 +22,15 @@
     font-weight: 500;
     font-size: 60px;
     line-height: 72px;
-    margin: 138px 0 0; 
+    margin: 183px 0 0; 
     letter-spacing: -0.6px;
   }
   
   .header__description {
     max-width: 683px;
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
     line-height: 30px;
     margin: 28px 0 0;
@@ -43,6 +49,7 @@
     width: 646px;
     height: 568px;
     display:flex;
+    z-index: -1;  /* I already had a the z-index here as well*/
 
   } 
   
@@ -52,11 +59,18 @@
     margin-top: auto;
     
   }
-e
+
   .header__paragraph {
     margin: 0;
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #838383
+
 }
 
   .header__link {
