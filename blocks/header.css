@@ -12,9 +12,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 1; /* I already had a the z-index here*/
+    z-index: 1; 
     box-sizing: border-box;
-
   }
 
 .header__title {
@@ -28,7 +27,7 @@
   
   .header__description {
     max-width: 683px;
-    font-family: "Noto Serif";
+    font-family: "Noto Serif", "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -49,7 +48,7 @@
     width: 646px;
     height: 568px;
     display:flex;
-    z-index: -1;  /* I already had a the z-index here as well*/
+    z-index: -1;  
 
   } 
   
@@ -64,7 +63,7 @@
     margin: 0;
     display: flex;
     flex-direction: column-reverse;
-    font-family: "Inter";
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
