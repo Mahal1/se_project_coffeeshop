@@ -54,11 +54,11 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 660px;
-    margin: 20px 0 0 auto;
+    margin: 0;
   }
   
   .about__paragraph {
-    margin-bottom: 20px;
+    margin: 20px;
   }
 
   .about__paragraph:last-child{

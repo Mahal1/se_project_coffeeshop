@@ -35,6 +35,7 @@
   .recipes__videos {
     display: flex;
     gap: 40px;
+    list-style-type: none;
     justify-content: center;
     padding-left: 0;
     margin: 0 0;

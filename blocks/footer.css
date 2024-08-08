@@ -38,6 +38,10 @@
   .footer__list-item {
     margin-bottom: 16px;
   }
+
+  .footer__list-item:last-child{
+    margin-bottom: 0;
+  }
   
   .footer__social-link {
     font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -63,7 +67,7 @@
   }
   
   .footer__copyright {
-    margin: 108px 0 60px 0px;
+    margin: 108px 0 0 0;
     font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
