@@ -54,13 +54,13 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 660px;
-    margin: 0;
+    margin: 19px 0 0;
   }
   
   .about__paragraph {
-    margin: 20px;
+    margin: 20px 0 0; /* For this value here, in the brief, it's not supposed to be the gap between the three paragraphs, because it doesn't look like a margin on the brief I have; it looks like a space between the paragraphs? */
   }
 
-  .about__paragraph:last-child{
-    margin-bottom: 0;
+  .about__paragraph:first-child {
+    margin-top: 0;
     }
